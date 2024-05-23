@@ -1400,11 +1400,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2211165811562317714, guid: 279109ab0d2513d4faa4d22c35695ea9, type: 3}
+  secondEnemyPrefab: {fileID: 8511520142181447479, guid: fe98fff7d8cc92f4a81b78c8a62806f3, type: 3}
   player: {fileID: 1155199682}
-  spawnInterval: 1
+  spawnInterval: 2
+  spawnDistance: 20
+  secondEnemyDistance: 10
   touchLimit: 3
   minSpawnArea: {x: 48, y: 0.659, z: 42}
   maxSpawnArea: {x: 48, y: 0.659, z: 42}
+  moveSpeed: 3
+  projectileSpeed: 8
+  projectilePrefab: {fileID: 2131296284473938961, guid: 05a7c0731c2503b479b12d92001b48c0, type: 3}
 --- !u!4 &1098394371
 Transform:
   m_ObjectHideFlags: 0
@@ -1748,7 +1754,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a7e11304593a9194a8b66d0fc3e64d04, type: 2}
+  - {fileID: 2100000, guid: 4b6420a8da998c745b0be30e21c88a0c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2073,11 +2079,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2211165811562317714, guid: 279109ab0d2513d4faa4d22c35695ea9, type: 3}
+  secondEnemyPrefab: {fileID: 8511520142181447479, guid: fe98fff7d8cc92f4a81b78c8a62806f3, type: 3}
   player: {fileID: 1155199682}
-  spawnInterval: 1
+  spawnInterval: 2
+  spawnDistance: 20
+  secondEnemyDistance: 10
   touchLimit: 3
   minSpawnArea: {x: -43.7, y: 0.659, z: 39.7}
   maxSpawnArea: {x: -43.7, y: 0.659, z: 39.7}
+  moveSpeed: 3
+  projectileSpeed: 8
+  projectilePrefab: {fileID: 2131296284473938961, guid: 05a7c0731c2503b479b12d92001b48c0, type: 3}
 --- !u!4 &1690117060
 Transform:
   m_ObjectHideFlags: 0
