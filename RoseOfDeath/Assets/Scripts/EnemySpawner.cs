@@ -30,14 +30,7 @@ private void Start()
 
 private void SpawnEnemies()
 {
-    if (!isDestroyed)
-    {
-        // Spawn the first type of enemy
-        SpawnEnemy(enemyPrefab, spawnDistance);
-
-        // Spawn the second type of enemy
-        SpawnEnemy(secondEnemyPrefab, secondEnemyDistance);
-    }
+    
 }
 
 private void SpawnEnemy(GameObject enemyPrefab, float distance)

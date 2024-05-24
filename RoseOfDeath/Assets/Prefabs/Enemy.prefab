@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5dac17169edb7442bd4852220a0cd78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4328587461568594846, guid: 81d5225248dae044a9135d1dfd9bbbf4, type: 3}
+  player: {fileID: 0}
   moveSpeed: 2
   touchLimit: 2
   projectilePrefab: {fileID: 0}

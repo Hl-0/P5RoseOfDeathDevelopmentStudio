@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public Transform player; // Reference to the player's transform
     public float moveSpeed = 3f; // Movement speed of the enemy
-    public int touchLimit = 3; // Number of times the enemy can be touched before disappearing
+    public int touchLimit = 2; // Number of times the enemy can be touched before disappearing
     public GameObject projectilePrefab; // Prefab of the projectile
     public float projectileSpeed = 8f; // Speed of the projectile shot by the enemy
     public float shootInterval = 1f; // Interval between shots
@@ -71,35 +71,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (!isDestroyed && other.CompareTag("Player"))
-        {
-            // Increment the touch count when the player touches the enemy
-            touchCount++;
-
-            // Check if the touch count exceeds the limit
-            if (touchCount >= touchLimit)
-            {
-                // Destroy the enemy if the touch count reaches the limit
-                DestroyEnemy();
-            }
-        }
-    }
-
     void OnCollisionEnter(Collision collision)
     {
-        if (!isDestroyed && collision.gameObject.CompareTag("Player"))
+        if (!isDestroyed && collision.gameObject.CompareTag("PlayerProjectile"))
         {
-            // Increment the touch count when the player touches the enemy
-            touchCount++;
-
-            // Check if the touch count exceeds the limit
-            if (touchCount >= touchLimit)
-            {
-                // Destroy the enemy if the touch count reaches the limit
-                DestroyEnemy();
-            }
+            // Increment the touch count when hit by the player's projectile
+            TakeDamage(1); // Player's projectile deals 1 damage
         }
     }
 
@@ -145,6 +122,19 @@ public class Enemy : MonoBehaviour
 
             // Destroy the projectile after 2 seconds
             Destroy(projectile, 2f);
+        }
+    }
+
+    // Method to make the enemy take damage
+    public void TakeDamage(int damage)
+    {
+        touchCount += damage; // Increment the touch count by the specified amount
+
+        // Check if the touch count exceeds the limit
+        if (touchCount >= touchLimit)
+        {
+            // Destroy the enemy if the touch count reaches the limit
+            DestroyEnemy();
         }
     }
 }
