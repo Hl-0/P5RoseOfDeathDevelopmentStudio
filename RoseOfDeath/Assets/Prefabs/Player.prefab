@@ -119,8 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd31803f96b27540918329f5a2f55a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 40
+  moveSpeed: 70
   maxHealth: 100
+  turnSpeed: 50
   projectilePrefab: {fileID: 2131296284473938961, guid: 05a7c0731c2503b479b12d92001b48c0, type: 3}
   projectileSpawnPoint: {fileID: 4328587461568594846}
   projectileSpeed: 10

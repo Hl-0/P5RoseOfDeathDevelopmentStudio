@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public int moveSpeed;
     public int maxHealth = 100; // Maximum health of the player
     private int currentHealth; // Current health of the player
-
+    public float turnSpeed = 50f;
     public GameObject projectilePrefab; // Prefab of the projectile
     public Transform projectileSpawnPoint; // Spawn point for the projectile
     public float projectileSpeed = 10f; // Speed of the projectile shot by the player
@@ -26,6 +26,19 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+                transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+
+            if (Input.GetKey(KeyCode.DownArrow))
+                transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+
+            if (Input.GetKey(KeyCode.Q))
+                transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+
+            if (Input.GetKey(KeyCode.E))
+                transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+        }
         // Get input from arrow keys or WASD
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
