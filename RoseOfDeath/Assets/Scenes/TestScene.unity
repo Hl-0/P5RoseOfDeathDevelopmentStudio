@@ -466,10 +466,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2211165811562317714, guid: 279109ab0d2513d4faa4d22c35695ea9, type: 3}
   secondEnemyPrefab: {fileID: 8511520142181447479, guid: fe98fff7d8cc92f4a81b78c8a62806f3, type: 3}
+  thirdEnemyPrefab: {fileID: 7741064330799067180, guid: 390c1518d18ab5a458119d106dbd8f03, type: 3}
   player: {fileID: 0}
   spawnInterval: 2
   spawnDistance: 10
   secondEnemyDistance: 5
+  thirdEnemyDistance: 15
   touchLimit: 3
   minSpawnArea: {x: 44.38, y: 0.659, z: 39.7}
   maxSpawnArea: {x: 44.38, y: 0.659, z: 39.7}
@@ -2124,10 +2126,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2211165811562317714, guid: 279109ab0d2513d4faa4d22c35695ea9, type: 3}
   secondEnemyPrefab: {fileID: 8511520142181447479, guid: fe98fff7d8cc92f4a81b78c8a62806f3, type: 3}
+  thirdEnemyPrefab: {fileID: 7741064330799067180, guid: 390c1518d18ab5a458119d106dbd8f03, type: 3}
   player: {fileID: 0}
   spawnInterval: 2
   spawnDistance: 10
   secondEnemyDistance: 5
+  thirdEnemyDistance: 15
   touchLimit: 3
   minSpawnArea: {x: -43.7, y: 0.659, z: 39.7}
   maxSpawnArea: {x: -43.7, y: 0.659, z: 39.7}
