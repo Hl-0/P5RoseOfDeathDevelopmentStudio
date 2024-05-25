@@ -73,7 +73,14 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (!isDestroyed && collision.gameObject.CompareTag("PlayerProjectile"))
+        if (!isDestroyed && collision.gameObject.CompareTag("Player"))
+        {
+            // Reduce player's health when colliding with the player
+            collision.gameObject.GetComponent<Player>().TakeDamage(10);
+            // Destroy the enemy when colliding with the player
+            DestroyEnemy();
+        }
+        else if (!isDestroyed && collision.gameObject.CompareTag("PlayerProjectile"))
         {
             // Increment the touch count when hit by the player's projectile
             TakeDamage(1); // Player's projectile deals 1 damage

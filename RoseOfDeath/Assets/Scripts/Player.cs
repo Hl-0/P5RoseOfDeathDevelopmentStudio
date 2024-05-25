@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     public int moveSpeed;
     public int maxHealth = 100; // Maximum health of the player
-    private int currentHealth; // Current health of the player
+    [SerializeField] private int currentHealth; // Current health of the player
     public float turnSpeed = 50f;
     public GameObject projectilePrefab; // Prefab of the projectile
     public Transform projectileSpawnPoint; // Spawn point for the projectile

@@ -43,7 +43,7 @@ public class EnemySpawner : MonoBehaviour
             // Randomly choose between the available enemy types
             int enemyType = Random.Range(0, 3);
             GameObject enemyToSpawn = null;
-            float spawnDistance = 0f;
+            float spawnDistance = 1f;
 
             // Determine which enemy type to spawn based on the randomly selected type
             switch (enemyType)
