@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
         }
 
         // Shooting logic
-        if (Input.GetKeyDown(KeyCode.V) && !doubleSpeedActive) // Only allow shooting if double speed is not active
+        if (Input.GetKeyDown(KeyCode.Space) && !doubleSpeedActive) // Only allow shooting if double speed is not active
         {
             Shoot();
         }
