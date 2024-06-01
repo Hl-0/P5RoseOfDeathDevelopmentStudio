@@ -31,7 +31,8 @@ public class GameManager : MonoBehaviour
     {
         button = GetComponent<Button>();
         gameManager = GameObject.Find("GameMAnager").GetComponent<GameManager>();
-        
+        score = 0;
+        UpdateScore(0);
     }
     void SetDifficulty()
     {
