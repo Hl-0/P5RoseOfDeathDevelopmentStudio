@@ -54,15 +54,15 @@ public class Button : MonoBehaviour
     {
         if (gameOverText != null)
         {
-            gameOverText.text = "";
+            gameOverText.text = "GameOver";
         }
         if (scoreText != null)
         {
-            scoreText.text = "";
+            scoreText.text = "Score: ";
         }
     }
 
-    void SetDifficulty()
+    void StartGame()
     {
         Debug.Log(button.gameObject.name + " was cliked");
         gameManager.StartGame(Difficulty);

@@ -30,11 +30,11 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         button = GetComponent<Button>();
-        gameManager = GameObject.Find("GameMAnager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         score = 0;
         UpdateScore(0);
     }
-    void SetDifficulty()
+    void SetGame()
     {
         Debug.Log(button.gameObject.name + " was cliked");
         gameManager.StartGame(Difficulty);

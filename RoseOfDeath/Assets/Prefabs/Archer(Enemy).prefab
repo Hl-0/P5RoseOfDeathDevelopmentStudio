@@ -175,7 +175,7 @@ MonoBehaviour:
   player: {fileID: 4328587461568594846, guid: 81d5225248dae044a9135d1dfd9bbbf4, type: 3}
   moveSpeed: 3
   touchLimit: 3
-  projectilePrefab: {fileID: 2131296284473938961, guid: 05a7c0731c2503b479b12d92001b48c0, type: 3}
+  projectilePrefab: {fileID: 5383285413133032075, guid: 5b971be81f97d7e4da79bef6342d5432, type: 3}
   projectileSpeed: 20
   shootInterval: 2
 --- !u!195 &9138819419275898957

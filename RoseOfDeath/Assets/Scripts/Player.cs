@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
         currentHealth -= damage; // Reduce current health by the specified amount
 
         // Check if player's health drops to zero or below
-        if (currentHealth <= 0)
+        if (currentHealth <= 5)
         {
             Die(); // Call the Die method if player's health is zero or below
         }
