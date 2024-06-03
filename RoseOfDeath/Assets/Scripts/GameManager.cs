@@ -104,7 +104,7 @@ void ChangePaused()
     public void UpdateLives(int livesToChange)
     {
         lives += livesToChange;
-        livesText.text = "Lives" + lives;
+        livesText.text = "Lives " + lives;
         if (lives <= 0)
         {
             GameOver();

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 817169979651746815}
   - component: {fileID: 8503044805694526783}
   - component: {fileID: -1656121516873987041}
+  - component: {fileID: -2210745364163486002}
+  - component: {fileID: 8617590705103921693}
   m_Layer: 0
   m_Name: tank
   m_TagString: Untagged
@@ -124,3 +126,44 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   projectileSpeed: 8
   shootInterval: 1
+--- !u!114 &-2210745364163486002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741064330799067180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff295e4db487874cb283a0857102d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointValue: 200
+  explosionParticle: {fileID: 0}
+--- !u!54 &8617590705103921693
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741064330799067180}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
