@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Target : MonoBehaviour
 {
@@ -13,6 +15,6 @@ public class Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Score )
     }
 }

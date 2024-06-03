@@ -79,7 +79,7 @@ void ChangePaused()
         scoreText.text = "Score:" + score;
     }
 
-    public void GAmeOver()
+    public void GameOver()
     {
         gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
@@ -107,7 +107,7 @@ void ChangePaused()
         livesText.text = "Lives" + lives;
         if (lives <= 0)
         {
-            GAmeOver();
+            GameOver();
         }
     }
 
